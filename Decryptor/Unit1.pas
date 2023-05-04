@@ -273,7 +273,7 @@ begin
         else
           if (searchResult.Name <> '.') and (searchResult.Name <> '..') then
             SearchPhobosFiles(IncludeTrailingBackSlash(dirName) + searchResult.Name);
-      until FindNext(searchResult) <> 0
+      until FindNext(searchResult) <> 0;
     finally
       FindClose(searchResult);
     end;
